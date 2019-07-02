@@ -76,7 +76,7 @@ class ReactProgressiveList extends React.PureComponent<Props, State> {
       scrollHeight = window.innerHeight;
       reachedLimit = top + height < scrollHeight;
     } else {
-      top = e.target.scrollTop;
+      top = e.target.offsetTop;
       height = e.target.offsetHeight;
       scrollHeight = e.target.scrollHeight;
       reachedLimit = top + height >= scrollHeight;
